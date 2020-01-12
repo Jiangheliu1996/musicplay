@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: cursive;
+    list-style: none;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+main {
+    height: 75vh;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10vh;
+}
+
+footer {
+    height: 25vh;
+}
+/* 背景图片 */
+.bg {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+    filter: blur(4px)
+}
+.bg:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0, 0.2)
+}
+
+/* 上面主题部分 */
+.song-operat {
+    float: left;
+}
+.song-img {
+    height: 50vh;
+    width: 50vh;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+}
+.song-infor {
+    margin-left: 60vh;
+}
+
+.song-operat-icon > .iconfont {
+    float: left;
+    margin: 0 5.9vh;
+    padding: 4vh 0;
+    font-size: 5vh;
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+}
+.song-operat-icon > .iconfont:hover {
+    color: #fff;
+}
+.song-infor > span {
+    background: #2e6eec;
+    padding: .7vh 1vh;
+    color: #fff;
+    
+    border-radius: 5px;
+}
+.song-infor > h1 {
+    color: #fff;
+    margin-top: 3vh;
+}
+.song-infor .icon-area {
+    color: #fff;
+    margin-top: 14vh;
+}
+.song-infor .iconfont {
+    margin-right: 10vh;
+    font-size: 3vh;
+}
+.bar-area {
+    display: flex;
+    align-items: center;
+    margin-top: 12vh;
+    
+}
+.bar-area .song-bar {
+    width: 75vw;
+    height: 1vh;
+    background: rgba(255,255,255, 0.3);
+}
+.bar-area .timeshow {
+    color: #fff;
+    margin-left: 1vh;
+    
+}
+.current-bar {
+    width: 10vw;
+    height: 1vh;
+    background: rgba(255,255,255);
+}
+.song-author {
+    margin-top: 2vh;
+    color: #fff;
+}
+footer {
+    background: rgba(255,255,255,0.4)
+}
+footer > div {
+    width: 1200px;
+    margin: 0 auto;
+}
+footer .iconfont {
+    font-size: 5vh;
+    color: rgba(255,255,255, .5);
+    cursor: pointer;
+    margin-top: 8vh;
+    opacity: 0;
+}
+footer:hover .iconfont {
+    opacity: 1;
+}
+footer span:hover {
+    color: rgba(255,255,255)
+}
+footer .icon-left {
+    float: left;
+}
+footer .icon-right {
+    float: right;
+}
+.classification li {
+    float: left;
+    margin-left: 5vh;
+    margin-top: 1vh;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.classification li:hover {
+    box-shadow: 0 0 .5vh .5vh rgba(255,255,255,0.8)
+}
+.cover {
+    background: center center no-repeat;
+    background-size: cover;
+    width: 18vh;
+    height: 18vh;
+}
+.classification h3 {
+    color: #fff;
+    margin-top: 2vh;
+}
+.layout {
+    margin: 0 auto;
+    width: 600px;
+  }
+  
+  @media (min-width: 700px) {
+    .layout {
+      width: 600px;
+    }
+  }
+  @media (min-width: 900px) {
+    .layout {
+      width: 800px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .layout {
+      width: 900px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .layout {
+      width: 1100px;
+    }
+  }
